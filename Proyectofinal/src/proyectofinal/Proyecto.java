@@ -67,5 +67,6 @@ public class Proyecto {
         return "Proyecto{" + "nombre=" + nombre + ", responsable=" + responsable + '}';
     }
     
+    //FttoString()... (Vector return string)
     
 }

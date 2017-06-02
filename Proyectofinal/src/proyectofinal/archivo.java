@@ -27,7 +27,7 @@ public class archivo {
                    + proy.getActores()+ "\t"
                    + proy.getCu()+ "\t"
                    + proy.getFT()+ "\t" 
-                   + proy.getFE()+ "\t");
+                   + proy.getFE()+ "\t");                   //UCP
             
             
             
@@ -84,7 +84,7 @@ public class archivo {
             
             for (int h=1 ; h<L.Cantidad(); h++) {
                 
-               
+                
                 
                 
             
