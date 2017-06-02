@@ -84,7 +84,7 @@ public class archivo {
             
             for (int h=1 ; h<L.Cantidad(); h++) {
                 
-                proy = L.Buscar(h);
+               
                 
                 
             
