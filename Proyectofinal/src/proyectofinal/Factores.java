@@ -4,17 +4,17 @@ package proyectofinal;
 
 public class Factores {
     
-    private int nombre, peso, influencia, codigo, descripcion;
+    private int peso, influencia, codigo;
+    private String nombre;
     
-    public Factores (int nombre, int peso, int influencia, int codigo, int descripcion) {
+    public Factores (String nombre, int peso, int influencia, int codigo) {
         this.nombre = nombre;
         this.peso = peso;
         this.influencia = influencia;
         this.codigo = codigo;
-        this.descripcion = descripcion;
     }
 
-    public void setNombre(int nombre) {
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
@@ -26,7 +26,7 @@ public class Factores {
         this.influencia = influencia;
     }
 
-    public int getNombre() {
+    public String getNombre() {
         return nombre;
     }
 
@@ -42,21 +42,15 @@ public class Factores {
         return codigo;
     }
 
-    public int getDescripcion() {
-        return descripcion;
-    }
 
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 
-    public void setDescripcion(int descripcion) {
-        this.descripcion = descripcion;
-    }
 
     @Override
     public String toString() {
-        return "Factores{" + "nombre=" + nombre + ", peso=" + peso + ", influencia=" + influencia + ", codigo=" + codigo + ", descripcion=" + descripcion + '}';
+        return "Factores{" + "nombre=" + nombre + ", peso=" + peso + ", influencia=" + influencia + ", codigo=" + codigo + '}';
     }   
     
 }

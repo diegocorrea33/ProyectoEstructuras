@@ -44,7 +44,7 @@ public class Lista {
         String r="";
         Nodo aux = cab;
         while(aux != null){
-            r = r+aux.getDato() + " ";
+            r = r + aux.getDato() + " ";
             aux = aux.getSig();
         }
             return r;

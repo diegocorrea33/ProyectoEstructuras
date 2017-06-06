@@ -25,9 +25,9 @@ public class archivo {
             bw.write(proy.getNombre() + "\t" 
                    + proy.getResponsable()+ "\t" 
                    + proy.getActores()+ "\t"
-                   + proy.getCu()+ "\t"
-                   + proy.getFT()+ "\t" 
-                   + proy.getFE()+ "\t");                   //UCP
+                   + proy.getCu()+ "\t"); 
+//                   + proy.getFT()+ "\t" 
+//                   + proy.getFE()+ "\t"                  //UCP
             
             
             
@@ -43,7 +43,8 @@ public class archivo {
     public Lista leerarch () {
         Lista L = new Lista();
         
-        String nombre, responsable,acto;
+        String nombre, acto;
+        Responsable responsable = null;
         Jer actores = null, cu = null;
         Factores FT, FE;
         int actor[] = new int[3];
@@ -62,9 +63,10 @@ public class archivo {
             while ((linea = br.readLine()) != null) {
             carac =linea.split("\t");
                     nombre=carac[0];
-                    responsable=carac[1];
-                    actor[0]= Integer.parseInt(carac[2]);
-                    cus[1]=Integer.parseInt(carac[3]);
+                    responsable.setNombre(carac[1]);
+                    responsable.setCedula(Integer.parseInt(carac [3]));
+                    actor[0]= Integer.parseInt(carac[4]);
+                    cus[1]=Integer.parseInt(carac[5]);
                     
                     L.InsertarFinal(new Proyecto(nombre, responsable, actores , cu));
             
@@ -76,24 +78,6 @@ public class archivo {
         
       return L;  
     }
-    
-        public void Escribirarch (Lista L ) throws IOException {
-            
-            Factores fts;
-            Proyecto proy=null;
-            
-            for (int h=1 ; h<L.Cantidad(); h++) {
-                
-                
-                
-                
-            
-            }
-        
-        
-        
-        
-        }
         
         public void Creararchivo (String s) {
             

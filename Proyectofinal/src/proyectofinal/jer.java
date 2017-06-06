@@ -35,5 +35,10 @@ class Jer {
     public int getCompleja() {
         return compleja;
     }
+
+    @Override
+    public String toString() {
+        return "Jer{" + "simple=" + simple + ", media=" + media + ", compleja=" + compleja + '}';
+    }
     
 }
