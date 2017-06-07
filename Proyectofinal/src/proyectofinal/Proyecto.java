@@ -7,7 +7,7 @@ public class Proyecto {
     private Jer actores, cu;
     private Factores FT[] = new Factores[12];
     private Factores FE[] = new Factores[7]; 
-
+    
     
     public Proyecto(String nombre, Responsable responsable, Jer actores, Jer cu) {
         this.nombre = nombre;
@@ -131,5 +131,64 @@ public class Proyecto {
         UCP = UACP() + TCF() + EF();
         
         return UCP;
+    }
+    
+    public void ConfigFT(){
+        
+        archivo arc = new archivo();
+        
+        FT[0].setNombre("Sistema Distribuido");
+        FT[1].setNombre("Objetivos de rendimiento");
+        FT[2].setNombre("Eficiencia respecto al usuario final");
+        FT[3].setNombre("Procesamiento compllejo");
+        FT[4].setNombre("Codigo reutilizable");
+        FT[5].setNombre("Instalacion sencilla");
+        FT[6].setNombre("Facil utilizacion");
+        FT[7].setNombre("Portabilidad");
+        FT[8].setNombre("Facil de cambiar");
+        FT[9].setNombre("Uso concurrente");
+        FT[10].setNombre("Caracteristicas de seguridad");
+        FT[11].setNombre("Accesible por terceros");
+        FT[12].setNombre("Se requiere formacion especial");
+        FT[0].setPeso(2);
+        FT[1].setPeso(1);
+        FT[2].setPeso(1);
+        FT[3].setPeso(1);
+        FT[4].setPeso(1);
+        FT[5].setPeso(0.5);
+        FT[6].setPeso(0.5);
+        FT[7].setPeso(2);
+        FT[8].setPeso(1);
+        FT[9].setPeso(1);
+        FT[10].setPeso(1);
+        FT[11].setPeso(1);
+        FT[12].setPeso(1);
+        arc.CrearConfig(FT);
+             
+    }
+    
+    public void ConfigFE(){
+        
+        archivo arc = new archivo();
+
+        
+        FE[0].setNombre("Familiar con RUP");
+        FE[1].setNombre("Experiencia en la aplicacion");
+        FE[2].setNombre("Experiencia con orientacion a objetos");
+        FE[3].setNombre("Capacidades de analisis");
+        FE[4].setNombre("Motivacion");
+        FE[5].setNombre("Requisitos estables");
+        FE[6].setNombre("Trabajadores a tiempo parcial");
+        FE[7].setNombre("Lenguaje complejo");
+        FE[0].setPeso(1.5);
+        FE[1].setPeso(0.5);
+        FE[2].setPeso(1);
+        FE[3].setPeso(0.5);
+        FE[4].setPeso(1);
+        FE[5].setPeso(2);
+        FE[6].setPeso(-1);
+        FE[7].setPeso(-1);
+        arc.CrearConfig(FE);
+        
     }
 }

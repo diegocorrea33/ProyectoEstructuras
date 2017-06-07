@@ -4,10 +4,11 @@ package proyectofinal;
 
 public class Factores {
     
-    private int peso, influencia, codigo;
+    private double peso;
+    private int influencia, codigo;
     private String nombre;
     
-    public Factores (String nombre, int peso, int influencia, int codigo) {
+    public Factores (String nombre, double peso, int influencia, int codigo) {
         this.nombre = nombre;
         this.peso = peso;
         this.influencia = influencia;
@@ -18,7 +19,7 @@ public class Factores {
         this.nombre = nombre;
     }
 
-    public void setPeso(int peso) {
+    public void setPeso(double peso) {
         this.peso = peso;
     }
 
@@ -30,7 +31,7 @@ public class Factores {
         return nombre;
     }
 
-    public int getPeso() {
+    public double getPeso() {
         return peso;
     }
 

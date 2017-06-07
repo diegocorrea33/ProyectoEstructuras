@@ -56,9 +56,10 @@ public class Proyectofinal {
                     break;
                 case 4:
                     break;
-                case 5:
+                case 5: // Factores Tecnicos.
+                    
                     break;
-                case 6:
+                case 6: // Factores Entorno.
                     break;
                 case 7:
                     break;

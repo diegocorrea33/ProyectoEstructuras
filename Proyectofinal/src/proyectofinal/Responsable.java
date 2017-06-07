@@ -6,7 +6,7 @@ public class Responsable {
     private String nombre;
     private int cedula;
     
-    Responsable (String nnombre, int cedula){
+    Responsable (String nombre, int cedula){
         this.nombre = nombre;
         this.cedula = cedula;
     }

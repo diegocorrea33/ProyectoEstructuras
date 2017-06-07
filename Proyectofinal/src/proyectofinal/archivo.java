@@ -94,11 +94,39 @@ public class archivo {
                 
             } catch (IOException e) {
                 e.printStackTrace();
-                }  
+            }  
             
-            }
+        }
+    
         
-       
-        } 
+        public void CrearConfig (Factores f[]){
+        
+        FileWriter fw = null;
+        BufferedWriter bw = null;
+        
+        
+        try {
+            fw =new FileWriter("C:\\Users\\hp\\Documents\\Universidad\\Estructura de Datos\\Factores.txt");
+            bw = new BufferedWriter(fw);
+            
+        for (int i=0; i<f.length; i++) {
+            
+            
+            
+            bw.write(f[i].getNombre() + "\t" 
+                   + f[i].getPeso()+ "\t" 
+                   + f[i].getInfluencia()+ "\t"
+                   + f[i].getCodigo()+ "\n"); 
+        
+        }
+        bw.close();;
+            
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        }
+    
+    } 
     
 
