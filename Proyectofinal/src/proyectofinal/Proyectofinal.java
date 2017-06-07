@@ -25,19 +25,30 @@ public class Proyectofinal {
             option = Menu();
             switch (option) {
                 case 1:
+                    
                     System.out.println("Ingresar el nombre del proyecto:");
                     nombre_proyecto = sc.next();
+                    //----------------------------------------------------------
                     
                     System.out.println("Ingresar el responsable:");
+                    System.out.print("Ingresar nombre del encargado:");
                     String name = sc.next(); 
+                    System.out.print("Ingresar cedula del encargado:");
                     int cedula = sc.nextInt();
-                    
                     responsable = new Responsable(name, cedula);
+                    //----------------------------------------------------------
+                   
+                    System.out.println("Ingresar los actores:");
                     
-                    System.out.println("Ingresar el actor:");
-                    nombre = sc.next();
-                    System.out.println("Ingresar el nombre:");
-                    nombre = sc.next();
+                    System.out.println("Ingresar cantidad de actores simples");
+                    int simples = sc.nextInt(); //Simples
+                    System.out.println("Ingresar cantidad de actores simples");
+                    int medios = sc.nextInt(); //Medios
+                    System.out.println("Ingresar cantidad de actores simples");
+                    int complejos = sc.nextInt(); //Complejos
+                    actores = new Jer(simples, medios, complejos);
+                    //----------------------------------------------------------
+                    
                     break;
                 case 2:
                     break;
